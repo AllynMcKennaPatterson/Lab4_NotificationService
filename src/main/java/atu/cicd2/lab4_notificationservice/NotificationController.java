@@ -11,7 +11,7 @@ public class NotificationController {
     @PostMapping("/notification")
 
     @ResponseStatus(HttpStatus.CREATED)
-    public String registerUserBody() {
+    public String notifyUser() {
 
     }
 }
