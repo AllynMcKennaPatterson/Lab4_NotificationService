@@ -11,7 +11,8 @@ public class NotificationController {
     @PostMapping("/notification")
 
     @ResponseStatus(HttpStatus.CREATED)
-    public String notifyUser() {
-
+    public String notifyUser(@RequestBody UserDetails userDetails) {
+        String notificationMessage = String.format("Received details for %s with email %s", userDetails.getName(), userDetails.getEmail());
+        return notificationMessage;
     }
 }
