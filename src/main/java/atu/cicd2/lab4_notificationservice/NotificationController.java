@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class NotificationController {
     @PostMapping("/notification")
-
     @ResponseStatus(HttpStatus.CREATED)
     public String notifyUser() {
 
